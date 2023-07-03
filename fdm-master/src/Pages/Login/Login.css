@@ -1,0 +1,196 @@
+/* light black - #202025 */
+/* light grey - #E0E0E0 */
+/* light blue - #2EABE3 */
+
+:root {
+  --background: #ffffff;
+  --text-primary: #000;
+  --input-bg: ##666666;
+  --border: #333;
+  --button-bg: #202025;
+  --button-col: white;
+  --border-col: black;
+  --bb: black;
+}
+
+[data-theme="dark"] {
+  --background: #202025;
+  --text-primary: #fff;
+  --input-bg: #6f6f6f;
+  --border: #808080;
+  --button-bg: #464647;
+  --button-col: black;
+  --border-col: rgb(147, 147, 147);
+  --bb: white;
+}
+
+.top-icons {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+}
+
+select {
+  margin-top: 6px;
+}
+
+.login-wrapper {
+  /* box-shadow: 0px 0px 12px var(--border); */
+  /* width: 45%;
+  height: 450px; */
+  /* margin-top: 250px; */
+  /* margin-left: 250px; */
+  /* padding-left: 50px;
+  padding-top: 30px;
+  padding-bottom: 100px; */
+
+  /* My stuff */
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding-top: 250px;
+  padding-left: 550px;
+  /* end of my stuff */
+
+  border-radius: 3px;
+  position: relative;
+  background-color: var(--background);
+  color: var(--text-primary);
+  transition: all 0.5s;
+}
+
+.conny {
+  box-shadow: 0px 0px 12px var(--border);
+  border-radius: 3px;
+  position: relative;
+  background-color: var(--background);
+  color: var(--text-primary);
+  transition: all 0.5s;
+  width: 900px;
+  padding: 30px;
+}
+
+/* Light dark mode */
+.theme-toggle i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.login-wrapper .fdm-logo-white {
+  transition: all 0.5s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 180px;
+}
+
+.forgot-password {
+  color: #527bec;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+textarea,
+input {
+  background-color: #f0efef;
+  color: #666666;
+  width: 500px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  /* border-color: var(--border-col); */
+  outline: none;
+  font-size: 16px;
+  line-height: 1.4;
+  transition: all 0.2s;
+}
+
+textarea:hover,
+input:hover {
+  cursor: pointer;
+  background-color: #f0efef;
+}
+
+textarea:focus,
+input:focus {
+  cursor: text;
+  color: #333333;
+  background-color: white;
+
+  border-color: #333333;
+}
+
+.login-text-box {
+  width: 650px;
+  height: 55px;
+}
+
+.login-wrapper label {
+  margin: 0;
+  padding: 0;
+}
+
+.submit-button {
+  background-color: var(--button-bg);
+  border-color: var(--bb);
+  color: none;
+  border: none;
+  padding: 7px 22px;
+  color: white;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  transition: 0.15s;
+}
+
+.submit-button:hover {
+  background-color: #3c3c44;
+  cursor: pointer;
+}
+
+/* manager approve/decline buttons */
+
+.approve-claim {
+  background-color: rgb(4, 167, 4);
+  font-weight: bold;
+  transition: 0.15s;
+}
+
+.approve-claim:hover {
+  background-color: rgb(89, 175, 132);
+}
+
+.decline-claim {
+  background-color: red;
+  font-weight: bold;
+  transition: 0.15s;
+}
+
+.decline-claim:hover {
+  background-color: rgb(245, 126, 126);
+}
+
+/* finance-department button */
+.process-claim {
+  font-weight: bold;
+  transition: 0.15s;
+}
+
+.process-claim:hover {
+  background-color: #7b9af0;
+}
+
+.login-incorrect-password-message {
+  color: red;
+}
+
+/* .login-wrong-password-button {
+} */
+
+.wrong-password-content .popup-inner {
+  border: solid red 2px;
+}
